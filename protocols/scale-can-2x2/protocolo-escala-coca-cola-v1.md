@@ -61,4 +61,4 @@ Modelos de imagem não fazem cálculo geométrico real — eles inferem visualme
 ---
 
 ## 📎 Referência completa (regras detalhadas — consultar se precisar reforçar algo específico)
-O prompt master completo com todas as 15 seções de regras (grounding, pribições absolutas, validação final, etc.) está preservado na conversa original. Se quiser, posso extrair ele para um segundo arquivo de referência, só que separado deste, para não pesar no dia a dia.
+O prompt master completo (grounding, restrições absolutas, validação final, etc.) está em `protocolo-escala-coca-cola-MASTER-completo.md`, na mesma pasta. Use este arquivo v1 no dia a dia; quando o modelo deixar de respeitar uma regra específica, copie só a seção do MASTER que corresponde e cole junto do prompt de invocação.
