@@ -48,7 +48,8 @@ identidade.**
 │   │   ├── protocolo-escala-coca-cola-v1.md            uso no dia a dia
 │   │   └── protocolo-escala-coca-cola-MASTER-completo.md  regras completas
 │   └── character-reference-sheet/
-│       └── character-reference-sheet-prompt.md          v1.0
+│       ├── character-reference-sheet-prompt.md          original v2.0 (palavra por palavra)
+│       └── README.md                                    uso, gates e continuidade
 └── styles/
     └── cinematic-photorealistic.md    3 registros de estilo fotorrealista
 ```
@@ -93,15 +94,15 @@ protocolo para e pergunta — nunca inventa. Use o v1 no dia a dia; quando o
 modelo deixar de respeitar uma regra específica, copie só a seção do MASTER
 correspondente e cole junto do prompt de invocação.
 
-### 4. Character reference sheet (`protocols/character-reference-sheet/`)
+### 4. Character reference sheet v2.0 (`protocols/character-reference-sheet/`)
 
-Folha de turnaround (frente / ¾ / lado / costas) + fileira de expressões +
-inserts de detalhe, travando a identidade para todos os shots futuros.
-Pode combinar com o protocolo de escala quando a figura física importar
-(criaturas, bonecos, miniaturas).
-
-⚠️ v1.0 reconstruída no padrão da casa — ver nota de status no cabeçalho do
-arquivo (o original anexado ainda não chegou ao repositório).
+Folha de produção com 11 seções que travam a identidade: turnaround + régua,
+head turnaround, expressões (6 primárias + 4 micro), posturas, gestos de
+mão, detalhes macro, silhueta + depth placeholder, wardrobe/props card,
+paleta com hex, notas de voz/personalidade e design notes. Prompt original
+**v2.0, palavra por palavra** — `IDENTITY LOCK` e `CONTINUITY RULES` são
+parte do lock. Gate: sem imagem de referência, não gera.
+Pode combinar com o protocolo de escala quando a figura física importar.
 
 ## Estilo — cinematic fotorealista (`styles/`)
 
@@ -113,10 +114,10 @@ coláveis (um registro por produção, do início ao fim):
   sheets 01–04 do pack (os quatro ads fotorrealistas)
 - **C — DOCUMENTARY REALISM** · luz disponível, handheld honesto, sem retoque
 
-Uso: cole `BASE` + um registro inteiros em (a) a reference image,
-(b) as character/scale sheets e (c) o prompt de animação do Seedance.
-Num depth board o estilo **não** se aplica — o board é grayscale por design;
-o estilo mora na referência e no clip.
+Uso: cole `BASE` + um registro inteiros em (a) a reference image e
+(b) o prompt de animação do Seedance. Não se aplica a depth boards
+(grayscale por design) nem a sheets de produção (character/scale) —
+estas têm estilo próprio travado no próprio prompt.
 
 ## Ferramentas (estado atual)
 
@@ -128,9 +129,15 @@ o estilo mora na referência e no clip.
 
 ## Changelog
 
+- **2026-09-04 (2)** — Incorporado o **original do character reference
+  sheet v2.0** (upload em `main_karu`), movido para
+  `protocols/character-reference-sheet/` com README de uso; removido o
+  placeholder v1.0 e o duplicado do thread OAK que estava na raiz. Módulo
+  de estilo ajustado: aplica a reference image + clip, não a sheets de
+  produção (character/scale).
 - **2026-09-04** — Projeto renomeado para *Storyboard Animation Engine*.
   Reestruturação em `protocols/` + `styles/`. Novo protocolo
-  character-reference-sheet (v1.0). Novo módulo de estilo
-  cinematic-photorealistic (BASE + 3 registros). Correção do ponteiro do
-  MASTER no protocolo de escala. Extração do prompt de depth map para arquivo
-  próprio.
+  character-reference-sheet (v1.0 — substituído pelo original v2.0 acima).
+  Novo módulo de estilo cinematic-photorealistic (BASE + 3 registros).
+  Correção do ponteiro do MASTER no protocolo de escala. Extração do
+  prompt de depth map para arquivo próprio.

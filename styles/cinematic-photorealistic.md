@@ -11,11 +11,13 @@ de geração.
    identical across all fifteen panels"*).
 2. Cole `BASE` + o registro escolhido inteiros em:
    - a geração da **reference image** (etapa 3 da linha de produção);
-   - a **character reference sheet** e a **scale sheet** (etapas 1–2);
    - o prompt de **animação** (Seedance) — no engine 5×3, é isso que preenche
      o slot `STYLE / LIGHTING / COLOUR GRADE` (*"written once, then pasted
      word for word into the animation prompt"*).
 3. **NÃO** aplique a um depth board — o board é grayscale por design.
+4. **NÃO** aplique a sheets de produção (character reference sheet, scale
+   sheet) — elas têm estilo próprio travado no próprio prompt (estúdio
+   neutro, sem cena).
 
 ## 🔹 BASE — colar sempre
 
