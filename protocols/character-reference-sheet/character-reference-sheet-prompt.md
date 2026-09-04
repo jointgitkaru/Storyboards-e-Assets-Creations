@@ -1,160 +1,77 @@
-# PROMPT DE CHARACTER REFERENCE SHEET v1.0 — Folha de Referência de Personagem
+# CHARACTER REFERENCE SHEET — GENERATION PROMPT v2.0
 
-> ⚠️ **Status:** v1.0 reconstruída em 04/09/2026 no padrão da casa (mesmo
-> formato do protocolo de escala Coca-Cola: invocação curta + bloco de dados +
-> checklist + master). O arquivo original anexado
-> `character-reference-sheet-prompt.md` ainda não chegou ao repositório —
-> quando chegar, substituir o texto de invocação e do bloco de dados pelo
-> original, mantendo o cabeçalho de uso e o master.
+## HOW TO USE
+Attach one reference image of the character. Fill in the bracketed fields in METADATA and DESIGN NOTES before running. Everything else can be used as-is.
 
-Folha única que **trava a identidade** do personagem (rosto, cabelo, roupa,
-acessórios, proporções, marcas) para uso em todos os shots seguintes —
-sheet 5×3, depth boards e clipes Seedance.
+## METADATA
+CHARACTER ID: [e.g. CHAR-001]
+NAME: [ ]
+ALIAS: [ ]
+ROLE: [protagonist / antagonist / support / mascot / etc.]
+SPECIES: [human / animal / creature / robot]
+AGE RANGE: [ ]
+REVISION: v1.0
+REFERENCE SOURCE: [uploaded photo / concept art / description]
 
-## Como usar
+## IDENTITY LOCK (non-negotiable — never alter)
+Use strictly the same character identity as the uploaded reference image: same face, same age range, same hairstyle, same hair texture and color, same skin tone, same facial features, same body proportions, same outfit, same accessories, same color palette, same overall build. Do not redesign, reinterpret, or stylize the character. Do not change ethnicity, species, gender presentation, or body type.
 
-1. Cole o **PROMPT DE INVOCAÇÃO** antes de qualquer pedido de geração.
-2. Preencha o **BLOCO DE DADOS** com o personagem.
-3. **Gate:** se não houver imagem de referência **e** a descrição do bloco
-   for insuficiente (faltar rosto, cabelo ou roupa), **PARE e pergunte** —
-   não invente identidade.
-4. (Opcional) Se a figura física importar (criatura, boneco, miniatura),
-   combine com o protocolo de escala Coca-Cola: marque `SCALE REFERENCE: Y`
-   no bloco de dados e as regras de escala passam a valer.
-5. (Opcional) Estilo: padrão = fotorrealista (BASE do módulo). Para outro
-   registro, cole `BASE` + um `REGISTER` de
-   `../../styles/cinematic-photorealistic.md` inteiro no bloco de dados.
+## LAYOUT
+Single horizontal production-style character reference sheet, multiple clearly labeled panels on a neutral light gray background, clean sans-serif labels, consistent margins, professional animation/game production board style.
 
----
+### 1. MAIN TURNAROUND + SCALE SHEET
+Full-body views, same lighting, same distance, same lens, same ground line across all four:
+- Front
+- 3/4 front
+- Side
+- Back
 
-## 🔹 PROMPT DE INVOCAÇÃO (colar sempre)
+Include a faint height-reference ruler or scale ticks beside the front view, and a small neutral gray silhouette guide underneath indicating stance. Identical proportions and outfit across all four views.
 
-```
-Apply the Character Reference Sheet Protocol v1.0.
+### 2. HEAD TURNAROUND
+Close-up head-only views: front face, 3/4 face, side profile, back of head/hair detail. Facial structure, eyes, nose, mouth, jaw, ears, and hairline must match exactly across all four.
 
-Generate ONE unified character reference sheet that LOCKS the appearance of
-the subject for every future shot of this production.
+### 3. EXPRESSION SHEET
+**Primary expressions** (6 small close-up portraits): neutral, slight smile, serious, surprised, thinking, calm/relaxed.
 
-This sheet is the identity source of truth: face, hair, build, clothing,
-accessories and distinctive marks shown here are FIXED in all later
-storyboards, depth boards and clips.
+**Micro-expressions** (4 additional close-ups, acting-direction style — pick 4 relevant to the character): e.g. "guarded / cautious", "subtle smirk", "brow furrowed / tension", "jaw tightened / controlled intensity".
 
-STRUCTURE (default — override with the data block):
-- ROW 1 — TURNAROUND: FRONT / THREE-QUARTER / SIDE / REAR. Four full-body
-  panels, same relaxed neutral A-pose, same scale, same ground plane.
-- ROW 2 — EXPRESSION SET (only if requested): five head-and-shoulders
-  panels: neutral, smile, surprise, anger, sadness.
-- ROW 3 — DETAIL INSERTS (only if requested): close details of the face,
-  the hands, costume pieces, accessories, silhouette.
+All expressions subtle and natural, without altering skull shape, eye size, or identity.
 
-IDENTITY LOCK — fixed across every panel, no exceptions:
-species or character type, facial structure, hairstyle and hair colour,
-build and proportions, clothing, accessories, distinctive marks
-(scars, tattoos, markings, damage).
+### 4. POSTURE VARIATIONS
+3 small full-body poses showing the same character in: neutral baseline stance, relaxed/casual stance, alert/tense stance. Same outfit, same proportions, same identity — only weight distribution and body language change.
 
-CAMERA AND ENVIRONMENT:
-Same camera height, same focal length, level horizon in every panel.
-Plain neutral gray background. Soft, even, diffuse studio lighting,
-identical in every panel. No forced perspective. No stylization unless a
-style register is supplied.
+### 5. HAND GESTURE LIBRARY *(omit if the character has no expressive hands, e.g. most animals)*
+4 close-up hand studies: relaxed/open, a characteristic habitual gesture, a tension/gripping gesture, an open/inviting gesture. Same skin tone, proportions, and any rings/gloves/accessories.
 
-OUTPUT RULES:
-One image per request. No text, labels, captions, arrows, rulers or grids
-beyond the cells described. No new characters. No added objects that are
-not part of the locked identity.
-```
+### 6. CLOSE-UP DETAIL PANELS
+Macro shots of: eyes, mouth/lips, skin or fur texture (include freckles/marks if present), hair or fur texture, ear/earring or headwear detail, clothing fabric detail (seams, buttons, embroidery, weathering).
 
----
+### 7. SILHOUETTE + DEPTH REFERENCE
+A) **Silhouette**: two flat, solid-gray anatomical silhouettes (front and side) on a neutral background, no internal detail — pure outline and proportion reference.
 
-## 🔹 BLOCO DE DADOS (preencher)
+B) **Depth pass placeholder**: grayscale approximation only (white = nearest, black = farthest), no lighting, texture, or shading baked in.
+*Note: treat this panel as a stylized approximation. For a production-accurate depth map, run the final image through a dedicated depth-estimation pass (e.g. MiDaS / Depth Anything) afterward instead of relying on this panel alone — no generative image prompt can compute true geometric depth.*
 
-```
-CHARACTER:
-Name: [nome]
-Type: [humano / criatura / personagem — espécie, modelo ou base]
-Reference image: [anexada? Y/N — se N, a descrição abaixo é obrigatória e completa]
-Verified height: [XX] cm
-Build / proportions: [ex: 1,75 m, atlético, ombros largos]
-Face: [traços, idade aparente]
-Hair: [cor, corte, textura]
-Clothing: [peça por peça]
-Accessories: [óculos, mochila, ferramenta, arma — ou "none"]
-Distinctive marks: [cicatrizes, tatuagens, marcas — ou "none"]
+### 8. WARDROBE, ACCESSORIES & PROP CARD
+Flat/laid-out views of each clothing item and accessory. For any signature prop, include a small card with: Prop name, Type, Material, Distinguishing traits, Narrative purpose.
 
-Rows:
-Row 1 — turnaround (front, 3/4, side, rear): [Y — default Y]
-Row 2 — expression set (neutral, smile, surprise, anger, sadness): [Y/N]
-Row 3 — detail inserts: [listar — ex: "face close-up, left hand, belt buckle"]
+### 9. COLOR PALETTE
+Extracted swatches with approximate hex values: skin/base tone, hair/fur color, eye color, primary clothing color(s), accessory color(s), accent color.
 
-Style register: [cinematic photo-realism — BASE + REGISTER A/B/C, colado
-inteiro de styles/cinematic-photorealistic.md — default: BASE + REGISTER A]
+### 10. VOICE & PERSONALITY NOTES *(optional — useful if this sheet will guide animation or voiceover direction)*
+Short label boxes only, no paragraphs: Personality (2–3 words), Speech tone/accent, Typical energy level.
 
-Scale reference (optional): [Y/N — se Y, vale o protocolo de escala
-Coca-Cola: lata 33cl (11,5 cm) ao lado do sujeito, mesma escala em todos
-os painéis, medidas reais confirmadas]
-```
+### 11. DESIGN NOTES
+Label boxes: Character type, Apparent age range, Hair, Eyes, Outfit, Accessories, Color palette, Character ID, Revision, Date.
 
----
+## CONTINUITY RULES (must follow exactly)
+- Use the exact same character identity in every panel.
+- Do not change proportions, scale, or outfit between panels.
+- Do not add, remove, or relocate any accessory or clothing item.
+- Lighting must be neutral studio lighting throughout — flat, low-shadow, consistent across all panels.
+- All views must share the same implied camera distance and focal length — no distortion, no dramatic perspective, no scene, no background elements.
+- Expressions and poses must never alter skull shape, eye spacing, or body proportions.
 
-## 🔹 CHECKLIST RÁPIDO (antes de gerar)
-
-- [ ] Imagem de referência anexada **ou** descrição completa no bloco (senão, perguntar)
-- [ ] Altura/proporções declaradas — não estimadas
-- [ ] Cada item do identity lock preenchido (ou "none" explícito)
-- [ ] 4 vistas do turnaround com MESMA escala, MESMO fundo, MESMA luz
-- [ ] Sem texto/labels/grid além das células pedidas
-- [ ] STYLE REGISTER colado inteiro (se aplicar)
-- [ ] Se `SCALE REFERENCE: Y` — medidas reais confirmadas (gate do protocolo de escala)
-
----
-
-## 🔹 MASTER — regras completas (consultar se o modelo errar)
-
-### IDENTITY FIDELITY
-
-A referência (imagem ou descrição) é a ÚNICA fonte de verdade para: tipo ou
-espécie, anatomia, estrutura facial, proporções, silhueta, coloração,
-roupas, acessórios e traços distintivos.
-NÃO redesenhar, "embelezar", estilizizar, antropomorfizar ou cartunizar o
-sujeito. NÃO alterar proporções para facilitar a composição.
-
-### PANEL CONSISTENCY
-
-- Mesma identidade em todos os painéis — sem exceção.
-- O ângulo muda; o personagem não muda.
-- Não espelhar o personagem sem motivo narrativo.
-- Não duplicar a mesma pose em painéis que pedem vistas diferentes.
-
-### EXPRESSION SET (se pedido)
-
-- Mesma cabeça, mesmo cabelo, mesma roupa em todas as 5 células.
-- Mudar apenas a expressão (olhos, sobrancelhas, boca, pescoço).
-- Sem cenários, sem props extras, sem mudança de luz entre células.
-
-### SCALE COMBINATION (se `SCALE REFERENCE: Y`)
-
-Valem as regras do protocolo de escala Coca-Cola
-(`../scale-can-2x2/`): lata 33cl fixa (11,5 × 6,6 × 5,2 cm), distância
-5–10 cm entre a lata e o sujeito, mesmo plano de chão, mesma escala em
-todos os painéis, sem perspectiva forçada. O gate de medidas do protocolo
-de escala continua valendo: sem medida real confirmada, PARE e pergunte.
-
-### ABSOLUTE PROHIBITIONS
-
-- NÃO inventar identidade (rosto, cabelo, roupa) quando não fornecida.
-- NÃO trocar roupa, cabelo ou proporções entre painéis.
-- NÃO adicionar texto, labels, captions, setas, réguas ou grids.
-- NÃO adicionar personagens ou objetos que não fazem parte da identidade travada.
-- NÃO mudar a escala do personagem entre painéis.
-
-### FINAL VALIDATION (antes de aceitar a imagem)
-
-1. Referência ou descrição completa estava disponível.
-2. Todos os painéis mostram a MESMA identidade.
-3. Escala idêntica entre as vistas do turnaround.
-4. Fundo e iluminação idênticos em todos os painéis.
-5. As células pedidas existem — sem falta, sem sobra.
-6. Nenhum texto/label/grid extra.
-7. Se escala: a lata está presente, com as dimensões corretas, em todos os painéis.
-
-Se qualquer item falhar: **regenerar, não apresentar**.
+## STYLE
+High-detail character reference sheet, clean studio lighting, sharp focus, realistic proportions, consistent anatomy, professional production art, organized grid layout, neutral background. No scene, no dramatic pose, no dramatic lighting anywhere on the sheet.
