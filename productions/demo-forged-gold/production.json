@@ -2,7 +2,7 @@
   "slug": "demo-forged-gold",
   "title": "FORGED — Gold",
   "created": "2026-09-05T00:15:41+00:00",
-  "register": "A",
+  "register": "B",
   "slots": {
     "reference_image": "character-reference.png",
     "character_id": "CHAR-001",
@@ -137,6 +137,24 @@
           "mode": "auto",
           "artifact": "depth-map.png",
           "at": "2026-09-05T03:12:39+00:00"
+        },
+        {
+          "check": "grayscale",
+          "value": "100.00%",
+          "expected": "≥99.5%",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-map.png",
+          "at": "2026-09-05T03:12:52+00:00"
+        },
+        {
+          "check": "grayscale",
+          "value": "100.00%",
+          "expected": "≥99.5%",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-map.png",
+          "at": "2026-09-05T03:13:05+00:00"
         }
       ]
     },
@@ -227,6 +245,24 @@
           "mode": "auto",
           "artifact": "depth-board.png",
           "at": "2026-09-05T03:12:39+00:00"
+        },
+        {
+          "check": "panels",
+          "value": "3x3=9",
+          "expected": "9",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-board.png",
+          "at": "2026-09-05T03:12:52+00:00"
+        },
+        {
+          "check": "panels",
+          "value": "3x3=9",
+          "expected": "9",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-board.png",
+          "at": "2026-09-05T03:13:05+00:00"
         }
       ]
     },
@@ -259,6 +295,24 @@
           "mode": "auto",
           "artifact": "storyboard-sheet.png",
           "at": "2026-09-05T03:12:39+00:00"
+        },
+        {
+          "check": "panels",
+          "value": "5x3=15",
+          "expected": "15",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "storyboard-sheet.png",
+          "at": "2026-09-05T03:12:51+00:00"
+        },
+        {
+          "check": "panels",
+          "value": "5x3=15",
+          "expected": "15",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "storyboard-sheet.png",
+          "at": "2026-09-05T03:13:04+00:00"
         }
       ]
     },
@@ -331,6 +385,24 @@
           "mode": "auto",
           "artifact": "clip-5x3.mp4",
           "at": "2026-09-05T03:12:39+00:00"
+        },
+        {
+          "check": "runtime",
+          "value": "15.00s",
+          "expected": "~15s",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "clip-5x3.mp4",
+          "at": "2026-09-05T03:12:52+00:00"
+        },
+        {
+          "check": "runtime",
+          "value": "15.00s",
+          "expected": "~15s",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "clip-5x3.mp4",
+          "at": "2026-09-05T03:13:05+00:00"
         }
       ]
     }
