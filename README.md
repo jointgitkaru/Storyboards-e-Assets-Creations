@@ -134,10 +134,14 @@ estas têm estilo próprio travado no próprio prompt.
 
 Os protocolos agora têm uma camada executável (linha completa, modo híbrido):
 
-1. **[`docs/BLUEPRINT.md`](docs/BLUEPRINT.md)** — arquitetura do sistema de
+1. **[`docs/GUIA-DE-UTILIZACAO.md`](docs/GUIA-DE-UTILIZACAO.md)** — **guia completo de utilização**:
+   conceitos, linha de produção, fases 0–4, camadas M0–M5, todos os comandos CLI,
+   slots/gates por etapa, variáveis de ambiente, receitas passo a passo, interface do
+   Studio, referência da API HTTP, funções Python por módulo e solução de problemas.
+2. **[`docs/BLUEPRINT.md`](docs/BLUEPRINT.md)** — arquitetura do sistema de
    produção: biblioteca de protocolos → compilador → orquestrador → QC →
    adaptadores → studio (M0–M5), com modelo de dados e roadmap.
-2. **`system/`** — implementação (stdlib Python): `verify` checa fidelidade
+3. **`system/`** — implementação (stdlib Python): `verify` checa fidelidade
    sha256 dos lock blocks; `init`/`set`/`render` compilam prompts com gates e
    provenance; **M3** `qc-image`/`qc-video`/`qc-register`/`qc-all` fazem QC
    automático (conta painéis de verdade, grayscale, runtime do mp4,
@@ -147,7 +151,7 @@ Os protocolos agora têm uma camada executável (linha completa, modo híbrido):
    `studio.py` + `studio.html` são o **Studio** — painel web com produções,
    trilha de etapas, galeria, prompts com histórico e diff, STATE 2 e QC,
    tudo pela API relativa `/api/*`. Ver [`system/README.md`](system/README.md).
-3. **`productions/demo-forged-gold/`** — produção de demonstração com os dois
+4. **`productions/demo-forged-gold/`** — produção de demonstração com os dois
    caminhos (depth board 3×3 e sheet 5×3), gates exercitados e `qc-all` verde.
 
 ## Ferramentas (estado atual)
@@ -160,6 +164,12 @@ Os protocolos agora têm uma camada executável (linha completa, modo híbrido):
 
 ## Changelog
 
+- **2026-09-05 (5)** — **Guia de utilização completo**
+  (`docs/GUIA-DE-UTILIZACAO.md`): conceitos, linha de produção etapa a etapa,
+  fases 0–4, camadas M0–M5, referência dos 17 comandos CLI, slots/gates por
+  etapa, variáveis de ambiente, 4 receitas passo a passo, guia da UI do Studio,
+  referência da API HTTP, funções Python por módulo, estrutura de produção,
+  troubleshooting e glossário.
 - **2026-09-05 (4)** — **Fase 3: engine agêntico 5×3** — máquina de estados
   0–4 do engine v3 em `system/session.py`, dirigível por CLI
   (`engine.py session [--mock]`) e pelo Studio (console **ENGINE · SESSION**
