@@ -1,0 +1,6 @@
+{
+  "name": "Storyboard Animation Engine",
+  "description": "Production studio and prompt engine for AI cinematic storyboards, character reference sheets, 3x3 depth boards, 2x2 scale protocols, and animation workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
