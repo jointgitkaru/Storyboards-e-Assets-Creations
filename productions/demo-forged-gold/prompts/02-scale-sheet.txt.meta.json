@@ -1,0 +1,11 @@
+{
+  "stage": "scale-sheet",
+  "source": "protocolo scale-invocation (\u001b[2mprotocols/scale-can-2x2/protocolo-escala-coca-cola-v1.md\u001b[0m)",
+  "template_sha256": "49370ff5ccacc43499d4e945e21481a94645e3fc08637c7add2bc6b0f7f95ab8",
+  "slots_used": [
+    "scale_subject",
+    "scale_height_cm"
+  ],
+  "style_register": "A",
+  "rendered_at": "2026-09-05T02:44:58+00:00"
+}

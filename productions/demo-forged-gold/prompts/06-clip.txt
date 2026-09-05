@@ -1,0 +1,36 @@
+CLIP — animated sequence from the depth board.
+
+You will receive three reference inputs:
+IMAGE 1 — LOOK REFERENCE: the color still that defines lighting, grade and material language.
+IMAGE 2 — CAMERA REFERENCE: the 3×3 depth-only storyboard defining framing, scale and spatial layout for the sequence.
+IMAGE 3 — IDENTITY REFERENCE: the character reference sheet locking face, outfit, proportions and palette.
+
+Animate the sequence defined by the depth board as one continuous shot sequence. Follow the board's composition and camera logic shot by shot; carry the look of IMAGE 1 into every frame; hold the character's identity exactly as locked by IMAGE 3 in every frame.
+
+SUBJECT: FORGED flagship phone, gold colourway, polished titanium frame, brushed back glass
+
+STYLE / LIGHTING / COLOUR GRADE (locked — pasted word for word from the reference image stage):
+
+STYLE REGISTER: CINEMATIC PHOTO-REALISM (locked)
+Photorealistic live-action cinematic look. Real camera optics, real
+lighting physics, natural material and skin texture, true-to-life
+environment colours.
+Cinema-grade stills with a 24 fps temporal feel for animation.
+Lighting is physically motivated: visible light-source logic, realistic
+fall-off, correct shadow direction, no imaginary light.
+Fine surface detail, micro-contrast, subtle natural imperfections.
+NO illustration, NO anime, NO 3D render, NO cartoon, NO stylization,
+NO plastic or waxy skin, NO oversharpened halos, NO duplicated anatomy,
+NO fantasy lighting, NO neon overglow, NO HDR bloom abuse.
+
+REGISTER: PHOTOREALISTIC COMMERCIAL (locked)
+High-end product-film lighting: soft controlled key, clean speculars,
+accurate rendering of glossy and matte finishes, minimal spill.
+Neutral-to-warm palette, high clarity, rich honest contrast.
+Flawless but natural subject surfaces — never retouched plastic.
+Reads like a paid broadcast spot. 16:9 or 9:16 as stated in the sheet.
+
+Runtime: 15s. If the video model's max clip length is shorter than the runtime, say so plainly and split the sequence at named beat boundaries — never silently shorten it.
+Audio: diegetic sound only — natural ambience, environmental foley, and subject-driven sound. No text, no narration, no music.
+No panel numbers, no grid lines, no storyboard chrome in the moving footage — the board is camera direction, not content.
+16:9.

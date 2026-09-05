@@ -1,0 +1,8 @@
+{
+  "stage": "depth-map",
+  "source": "protocolo depth-map (\u001b[2mprotocols/depth-board-3x3/depth-map-prompt.md\u001b[0m)",
+  "template_sha256": "4e8e79e165692a1c92968736ac65daa96793968ef166d9f90f2879fd9ea18a77",
+  "slots_used": [],
+  "style_register": "B",
+  "rendered_at": "2026-09-05T00:15:54+00:00"
+}

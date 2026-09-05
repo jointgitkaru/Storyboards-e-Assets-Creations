@@ -1,0 +1,33 @@
+Use the reference storyboard to make a full animation movie.
+Audio: diegetic sound only — natural ambience, environmental foley, and subject-driven sound. No text.
+
+Animate the fifteen panels of the reference storyboard as one continuous sequence, in order, panel 1 through panel 15. Each panel is one second of screen time. Total runtime 15s.
+
+THE SUBJECT (pasted word for word from the sheet prompt): FORGED flagship phone, gold colourway, polished titanium frame, brushed back glass
+
+STYLE / LIGHTING / COLOUR GRADE (locked — pasted word for word from the sheet prompt):
+
+STYLE REGISTER: CINEMATIC PHOTO-REALISM (locked)
+Photorealistic live-action cinematic look. Real camera optics, real
+lighting physics, natural material and skin texture, true-to-life
+environment colours.
+Cinema-grade stills with a 24 fps temporal feel for animation.
+Lighting is physically motivated: visible light-source logic, realistic
+fall-off, correct shadow direction, no imaginary light.
+Fine surface detail, micro-contrast, subtle natural imperfections.
+NO illustration, NO anime, NO 3D render, NO cartoon, NO stylization,
+NO plastic or waxy skin, NO oversharpened halos, NO duplicated anatomy,
+NO fantasy lighting, NO neon overglow, NO HDR bloom abuse.
+
+REGISTER: PHOTOREALISTIC COMMERCIAL (locked)
+High-end product-film lighting: soft controlled key, clean speculars,
+accurate rendering of glossy and matte finishes, minimal spill.
+Neutral-to-warm palette, high clarity, rich honest contrast.
+Flawless but natural subject surfaces — never retouched plastic.
+Reads like a paid broadcast spot. 16:9 or 9:16 as stated in the sheet.
+
+The chrome on the sheet is reference scaffolding, not content. The animation renders the panel imagery only. Never let the panel numbers, timecodes or caption strip appear in the moving footage.
+
+If the video model's max clip length is shorter than the runtime, say so plainly, then either generate the sequence in segments and name the split points, or ask which beats to drop. Never silently shorten it.
+
+16:9.

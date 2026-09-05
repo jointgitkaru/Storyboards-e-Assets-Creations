@@ -1,0 +1,362 @@
+{
+  "schema": 1,
+  "updated": "2026-09-05",
+  "note": "Registry da biblioteca de protocolos (M0). Os .md originais continuam sendo a verdade; este arquivo declara como extrair cada lock block, quais são os slots e os gates. Rodar `engine.py verify` para checar fidelidade (sha256); `verify --fix` APÓS edição intencional de um protocolo.",
+  "protocols": [
+    {
+      "id": "character-sheet",
+      "title": "Character Reference Sheet — Generation Prompt v2.0",
+      "source": "protocols/character-reference-sheet/character-reference-sheet-prompt.md",
+      "extraction": {
+        "kind": "whole_file"
+      },
+      "sha256": "e0691122267c859a600cac83d49ead5f10394d4b9a67abbd4ee9133e57784c02",
+      "slots": {
+        "character_id": {
+          "find": "CHARACTER ID: [e.g. CHAR-001]",
+          "required": true
+        },
+        "name": {
+          "find": "NAME: [ ]",
+          "required": true
+        },
+        "alias": {
+          "find": "ALIAS: [ ]",
+          "required": false
+        },
+        "role": {
+          "find": "ROLE: [protagonist / antagonist / support / mascot / etc.]",
+          "required": true
+        },
+        "species": {
+          "find": "SPECIES: [human / animal / creature / robot]",
+          "required": true
+        },
+        "age_range": {
+          "find": "AGE RANGE: [ ]",
+          "required": true
+        },
+        "reference_source": {
+          "find": "REFERENCE SOURCE: [uploaded photo / concept art / description]",
+          "required": true
+        }
+      }
+    },
+    {
+      "id": "scale-invocation",
+      "title": "Prompt Universal de Escala v1.0 — invocação (lata 33cl)",
+      "source": "protocols/scale-can-2x2/protocolo-escala-coca-cola-v1.md",
+      "extraction": {
+        "kind": "first_code_block"
+      },
+      "sha256": "5f5e4b2f99a725f9808f32179f3d446e43d73148ab871721463597bd549214fe",
+      "slots": {
+        "scale_subject": {
+          "find": "Subject: [nome/descrição]",
+          "required": true
+        },
+        "scale_height_cm": {
+          "find": "Verified height: [xx] cm",
+          "required": true,
+          "numeric": true
+        },
+        "scale_length_cm": {
+          "find": "Verified length: [xx] cm (se aplicável)",
+          "required": false
+        },
+        "scale_width_cm": {
+          "find": "Verified width: [xx] cm (se aplicável)",
+          "required": false
+        },
+        "scale_depth_cm": {
+          "find": "Verified depth: [xx] cm (se aplicável)",
+          "required": false
+        },
+        "scale_additional": {
+          "find": "Additional measurements: [se necessário — envergadura, cauda, etc.]",
+          "required": false
+        },
+        "views": {
+          "find": "1. Front\n2. 3/4\n3. Side\n4. Rear 3/4 (ou especificar outras)",
+          "required": false
+        }
+      }
+    },
+    {
+      "id": "depth-map",
+      "title": "Depth Map Extraction Prompt",
+      "source": "protocols/depth-board-3x3/depth-map-prompt.md",
+      "extraction": {
+        "kind": "first_code_block"
+      },
+      "sha256": "4e8e79e165692a1c92968736ac65daa96793968ef166d9f90f2879fd9ea18a77",
+      "slots": {}
+    },
+    {
+      "id": "depth-board-3x3",
+      "title": "Depth-only storyboard generator — prompt 8 fases",
+      "source": "protocols/depth-board-3x3/storyboard-prompt.md",
+      "extraction": {
+        "kind": "whole_file"
+      },
+      "sha256": "99093e645e50f93e1c638937bd290f1c6196a0b635ad61bd12b258f7e1c8e9c6",
+      "slots": {}
+    }
+  ],
+  "style_module": {
+    "id": "cinematic-photorealistic",
+    "title": "Style Module — Cinematic Photo-realism v1.0",
+    "source": "styles/cinematic-photorealistic.md",
+    "base": {
+      "extract": {
+        "kind": "code_block_after",
+        "heading": "BASE — colar sempre"
+      },
+      "sha256": "d68ba6e96ce5076444ba698bc7843cccf1ab8aa3d75dfa1a2906a30373159201"
+    },
+    "registers": {
+      "A": {
+        "label": "FEATURE FILM",
+        "extract": {
+          "kind": "code_block_after",
+          "heading": "REGISTER A — FEATURE FILM"
+        },
+        "sha256": "cb353af0c588c03342ed59aac7abda9e41ca2d63b34b8da5c649354e53aa155e"
+      },
+      "B": {
+        "label": "PHOTOREALISTIC COMMERCIAL",
+        "extract": {
+          "kind": "code_block_after",
+          "heading": "REGISTER B — PHOTOREALISTIC COMMERCIAL"
+        },
+        "sha256": "2939e98b68947fc9b0d8b59d09a640b7fcb23761c2defbdbbed6e7448b84fe44"
+      },
+      "C": {
+        "label": "DOCUMENTARY REALISM",
+        "extract": {
+          "kind": "code_block_after",
+          "heading": "REGISTER C — DOCUMENTARY REALISM"
+        },
+        "sha256": "328a06b988c127d8acabdd561ff10a5bf80f8b49ab798107b06e576b707c169b"
+      }
+    }
+  },
+  "templates": [
+    {
+      "id": "reference-image",
+      "file": "system/templates/reference-image.md",
+      "sha256": "c190c49b7783ca60b673fc371d0b626e88fff0cb79214f0327244106b3a92413"
+    },
+    {
+      "id": "storyboard-sheet-5x3",
+      "file": "system/templates/storyboard-sheet-5x3.md",
+      "sha256": "2707457a13693bccaf020f8a8c9bb66999298ff49e22f500a0f7b3dfc4c67f21"
+    },
+    {
+      "id": "clip-depth",
+      "file": "system/templates/clip-depth.md",
+      "sha256": "a7febdd01ccb61e41b4c04c3625024eeae6dadbf3e0de5e062a54d426cc4cc33"
+    },
+    {
+      "id": "clip-engine-5x3",
+      "file": "system/templates/clip-engine-5x3.md",
+      "sha256": "7cdafa05e485f9ec7ba780001dc862bee212d3c910d1c4fea9068955f6c04d4e"
+    }
+  ],
+  "model_chains": {
+    "image": ["openai-image", "mock", "manual"],
+    "video": ["openai-video", "mock", "manual"],
+    "note": "Fallback chain do engine — nunca substituição silenciosa. openai-* requer IMAGE_API_URL/IMAGE_API_KEY (ou OPENAI_API_KEY) / VIDEO_API_URL/VIDEO_API_KEY; mock via ENGINE_MOCK=1 ou --mock; manual sempre presente no fim (modo híbrido)."
+  },
+  "stages": [
+    {
+      "id": "character-sheet",
+      "order": 1,
+      "name": "Character reference sheet (trava IDENTIDADE)",
+      "kind": "protocol",
+      "protocol": "character-sheet",
+      "tool_hint": "GPT Image 2 / Nano Banana — com a imagem de referência anexada",
+      "gates": [
+        {
+          "type": "file_exists",
+          "slot": "reference_image",
+          "in": "assets",
+          "message": "GATE (protocolo v2.0): sem imagem de referência → NÃO GERAR. Anexe a referência em assets/ e registre o nome com: engine.py set <slug> reference_image=<arquivo>"
+        }
+      ]
+    },
+    {
+      "id": "scale-sheet",
+      "order": 2,
+      "name": "Escala 2×2 lata 33cl (trava DIMENSÃO — opcional)",
+      "kind": "protocol",
+      "protocol": "scale-invocation",
+      "optional": true,
+      "tool_hint": "GPT Image 2 / Nano Banana",
+      "gates": [
+        {
+          "type": "flag",
+          "slot": "dimensions_verified",
+          "value": true,
+          "message": "GATE (escala v1.0): Do NOT guess dimensions — medida não confirmada → PARAR E PERGUNTAR. Confirme a fonte da medida e registre: engine.py set <slug> dimensions_verified=true"
+        }
+      ]
+    },
+    {
+      "id": "reference-image",
+      "order": 3,
+      "name": "Reference image (define o LOOK — BASE + 1 registro)",
+      "kind": "template",
+      "template": "reference-image",
+      "tool_hint": "Midjourney / GPT Image 2 / Nano Banana",
+      "slots": [
+        "TITLE",
+        "SUBJECT",
+        "SCENE",
+        "FRAMING",
+        "ASPECT_RATIO"
+      ],
+      "gates": [
+        {
+          "type": "style_register",
+          "message": "GATE (módulo de estilo): um registro por produção, do início ao fim. Escolha A, B ou C: engine.py set <slug> register=B"
+        }
+      ]
+    },
+    {
+      "id": "depth-map",
+      "order": 4,
+      "name": "Depth map (grayscale — branco=perto, preto=longe)",
+      "kind": "protocol",
+      "protocol": "depth-map",
+      "tool_hint": "Nano Banana / GPT Image 2 — cole junto da reference image",
+      "gates": [
+        {
+          "type": "artifact",
+          "pattern": "reference-image.*",
+          "in": "renders",
+          "message": "GATE: o depth map se extrai DA reference image. Gere/coloque a reference image em renders/ antes."
+        }
+      ]
+    },
+    {
+      "id": "depth-board",
+      "order": 5,
+      "name": "Depth board 3×3 (trava CÂMERA — 9 shots, 8 fases)",
+      "kind": "protocol",
+      "protocol": "depth-board-3x3",
+      "tool_hint": "Nano Banana / GPT Image 2 — envie reference + depth map juntas",
+      "gates": [
+        {
+          "type": "artifact",
+          "pattern": "reference-image.*",
+          "in": "renders",
+          "message": "GATE: o board precisa da reference image em renders/."
+        },
+        {
+          "type": "artifact",
+          "pattern": "depth-map.*",
+          "in": "renders",
+          "message": "GATE: o board precisa do depth map em renders/."
+        }
+      ]
+    },
+    {
+      "id": "storyboard-sheet",
+      "order": 5,
+      "name": "ALTERNATIVA à 4b — Sheet 5×3 do engine (15 painéis, 0:15)",
+      "kind": "template",
+      "template": "storyboard-sheet-5x3",
+      "tool_hint": "GPT Image 2 (TopView) — alternativa ao caminho depth",
+      "slots": [
+        "colour",
+        "subject",
+        "subject_long",
+        "beat_1",
+        "beat_2",
+        "beat_3",
+        "beat_4",
+        "beat_5",
+        "beat_6",
+        "beat_7",
+        "beat_8",
+        "beat_9",
+        "beat_10",
+        "beat_11",
+        "beat_12",
+        "beat_13",
+        "beat_14",
+        "beat_15",
+        "title_word",
+        "format_label",
+        "aspect_ratio"
+      ],
+      "auto_style": true,
+      "gates": [
+        {
+          "type": "slot_set",
+          "slot": "subject",
+          "message": "GATE: sheet 5×3 exige [SUBJECT] concreto (modelo exato, colourway, acabamento, cada detalhe de superfície)."
+        }
+      ]
+    },
+    {
+      "id": "clip",
+      "order": 6,
+      "name": "Clip — caminho depth (look + câmera + identidade)",
+      "kind": "template",
+      "template": "clip-depth",
+      "tool_hint": "Seedance 2.0 (fallback: Veo 3.1) — anexe reference, board e character sheet",
+      "slots": [
+        "SUBJECT",
+        "DURATION",
+        "ASPECT_RATIO"
+      ],
+      "gates": [
+        {
+          "type": "artifact",
+          "pattern": "reference-image.*",
+          "in": "renders",
+          "message": "GATE: sem reference image (look) em renders/, o clip não compila."
+        },
+        {
+          "type": "artifact",
+          "pattern": "depth-board.*",
+          "in": "renders",
+          "message": "GATE: sem depth board (câmera) em renders/, o clip não compila."
+        },
+        {
+          "type": "stage_rendered",
+          "stage": "character-sheet",
+          "message": "GATE: identidade não travada — compile a character sheet (etapa 1) primeiro."
+        }
+      ]
+    },
+    {
+      "id": "clip-5x3",
+      "order": 6,
+      "name": "Clip — caminho engine 5×3 (abertura travada)",
+      "kind": "template",
+      "template": "clip-engine-5x3",
+      "tool_hint": "Seedance 2.0 (fallback: Veo 3.1) — passe a sheet como imagem de referência",
+      "slots": [
+        "SUBJECT",
+        "DURATION",
+        "ASPECT_RATIO"
+      ],
+      "gates": [
+        {
+          "type": "stage_rendered",
+          "stage": "storyboard-sheet",
+          "message": "GATE: compile a sheet 5×3 (etapa 4 alternativa) primeiro."
+        },
+        {
+          "type": "artifact",
+          "pattern": "storyboard-sheet.*",
+          "in": "renders",
+          "message": "GATE: a animação usa a sheet como referência — coloque storyboard-sheet.png em renders/."
+        }
+      ]
+    }
+  ]
+}

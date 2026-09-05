@@ -1,0 +1,28 @@
+Apply the Coca-Cola Dimensional Scale Protocol v1.0.
+
+Fixed scale reference: standard 33cl Coca-Cola Classic can
+(height 11.5cm, body diameter 6.6cm, top/base diameter 5.2cm),
+positioned 5–10cm beside the subject, same ground plane, horizontal camera,
+no forced perspective, consistent scale across all 4 panels of a 2x2 sheet.
+
+Do NOT guess dimensions. If subject/object measurements below are
+incomplete, STOP and ask before generating. For measurable objects
+without confirmed real-world dimensions, research the exact
+version/model first — never assume a "typical" size.
+
+SUBJECT DIMENSIONS:
+Subject: protagonista de pé, ao lado da lata
+Verified height: 170 cm
+Verified length: [xx] cm (se aplicável)
+Verified width: [xx] cm (se aplicável)
+Verified depth: [xx] cm (se aplicável)
+Additional measurements: [se necessário — envergadura, cauda, etc.]
+
+Requested views:
+1. Front
+2. 3/4
+3. Side
+4. Rear 3/4 (ou especificar outras)
+
+Style: neutral gray studio background, soft diffuse lighting,
+photographic realism, no stylization, no anatomy changes.

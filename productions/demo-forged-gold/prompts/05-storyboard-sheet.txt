@@ -1,0 +1,52 @@
+A single clean storyboard sheet: a 5×3 grid of fifteen sequential panels on one near-black card, equal panel size, five across and three down, thin clean gutters, read left to right then top to bottom.
+
+All fifteen panels show ONE continuous sequence unfolding in time — the same FORGED flagship phone, gold colourway, polished titanium frame, brushed back glass throughout, identical in design, colour and materials in every single panel.
+
+THE SUBJECT: FORGED flagship phone, gold colourway, polished titanium frame, brushed back glass
+
+THE SEQUENCE, panel by panel — one second per panel, fifteen seconds total:
+Panel 1 — 00:00–00:01 — gold phone face-down on dark stone, haze rim light, slow drift in from black — wide establishing
+Panel 2 — 00:01–00:02 — [next beat, different framing, real motion]
+Panel 3 — 00:02–00:03 — [next beat, different framing, real motion]
+Panel 4 — 00:03–00:04 — [next beat, different framing, real motion]
+Panel 5 — 00:04–00:05 — [next beat, different framing, real motion]
+Panel 6 — 00:05–00:06 — [next beat, different framing, real motion]
+Panel 7 — 00:06–00:07 — [next beat, different framing, real motion]
+Panel 8 — 00:07–00:08 — gold edge catches a hard key light as the phone rotates 90° — extreme macro, midpoint
+Panel 9 — 00:08–00:09 — [next beat, different framing, real motion]
+Panel 10 — 00:09–00:10 — [next beat, different framing, real motion]
+Panel 11 — 00:10–00:11 — [next beat, different framing, real motion]
+Panel 12 — 00:11–00:12 — [next beat, different framing, real motion]
+Panel 13 — 00:12–00:13 — [next beat, different framing, real motion]
+Panel 14 — 00:13–00:14 — [penultimate beat, different framing, real motion]
+Panel 15 — 00:14–00:15 — phone standing upright, logo-side to camera, light settles — low angle payoff
+
+[Each panel names its own framing — wide establishing, medium, close-up, extreme macro, low angle, overhead, over-the-shoulder, profile, Dutch angle. Never two consecutive panels alike.]
+
+HEADER BLOCK: FORGED set large on the left, 15 SEC — PRODUCT FILM and TOTAL RUNTIME — 0:15 on the right. PANEL CHROME: each panel carries its number and its timecode, with one short line of caption text directly beneath the panel describing that beat.
+
+STYLE / LIGHTING / COLOUR GRADE (locked — written once, pasted word for word):
+
+STYLE REGISTER: CINEMATIC PHOTO-REALISM (locked)
+Photorealistic live-action cinematic look. Real camera optics, real
+lighting physics, natural material and skin texture, true-to-life
+environment colours.
+Cinema-grade stills with a 24 fps temporal feel for animation.
+Lighting is physically motivated: visible light-source logic, realistic
+fall-off, correct shadow direction, no imaginary light.
+Fine surface detail, micro-contrast, subtle natural imperfections.
+NO illustration, NO anime, NO 3D render, NO cartoon, NO stylization,
+NO plastic or waxy skin, NO oversharpened halos, NO duplicated anatomy,
+NO fantasy lighting, NO neon overglow, NO HDR bloom abuse.
+
+REGISTER: PHOTOREALISTIC COMMERCIAL (locked)
+High-end product-film lighting: soft controlled key, clean speculars,
+accurate rendering of glossy and matte finishes, minimal spill.
+Neutral-to-warm palette, high clarity, rich honest contrast.
+Flawless but natural subject surfaces — never retouched plastic.
+Reads like a paid broadcast spot. 16:9 or 9:16 as stated in the sheet.
+
+Every panel shares the same style, lighting, colour grade, and subject design. The sheet must look like fifteen frames pulled from one continuous shot, not fifteen separate images.
+
+High resolution, 8K quality, 16:9.
+The panel images themselves stay clean: no watermarks, no logos, no arrows, no speech bubbles, no lettering inside the frame. The only text on the sheet is the panel numbers, the timecodes, the caption line under each panel, and the header block.

@@ -1,0 +1,13 @@
+{
+  "stage": "reference-image",
+  "source": "template reference-image (\u001b[2msystem/templates/reference-image.md\u001b[0m)",
+  "template_sha256": "9bc35663002177010f4b3b8c4457345852baab91c5f157c789dcede116289344",
+  "slots_used": [
+    "subject",
+    "scene",
+    "framing",
+    "aspect_ratio"
+  ],
+  "style_register": "B",
+  "rendered_at": "2026-09-05T00:59:40+00:00"
+}

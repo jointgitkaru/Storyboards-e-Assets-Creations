@@ -1,0 +1,302 @@
+{
+  "slug": "demo-forged-gold",
+  "title": "FORGED — Gold",
+  "created": "2026-09-05T00:15:41+00:00",
+  "register": "A",
+  "slots": {
+    "reference_image": "character-reference.png",
+    "character_id": "CHAR-001",
+    "name": "Ana Marques",
+    "role": "protagonist",
+    "species": "human",
+    "age_range": "28–34",
+    "reference_source": "uploaded photo",
+    "scale_subject": "protagonista de pé, ao lado da lata",
+    "scale_height_cm": "170",
+    "dimensions_verified": true,
+    "subject": "FORGED flagship phone, gold colourway, polished titanium frame, brushed back glass",
+    "scene": "black studio, wet stone floor",
+    "framing": "product hero, slightly low angle",
+    "title_word": "FORGED",
+    "format_label": "15 SEC — PRODUCT FILM",
+    "beat_1": "gold phone face-down on dark stone, haze rim light, slow drift in from black — wide establishing",
+    "beat_8": "gold edge catches a hard key light as the phone rotates 90° — extreme macro, midpoint",
+    "beat_15": "phone standing upright, logo-side to camera, light settles — low angle payoff"
+  },
+  "stages": {
+    "character-sheet": {
+      "status": "rendered",
+      "prompt": "prompts/01-character-sheet.txt",
+      "rendered_at": "2026-09-05T02:44:25+00:00",
+      "artifact": "renders/character-sheet.png",
+      "adapter": "mock"
+    },
+    "scale-sheet": {
+      "status": "rendered",
+      "prompt": "prompts/02-scale-sheet.txt",
+      "rendered_at": "2026-09-05T02:44:58+00:00",
+      "artifact": "renders/scale-sheet.png",
+      "adapter": "mock"
+    },
+    "reference-image": {
+      "status": "rendered",
+      "prompt": "prompts/03-reference-image.txt",
+      "rendered_at": "2026-09-05T00:59:40+00:00",
+      "artifact": "renders/reference-image.png",
+      "adapter": "manual"
+    },
+    "depth-map": {
+      "status": "rendered",
+      "prompt": "prompts/04-depth-map.txt",
+      "rendered_at": "2026-09-05T00:15:54+00:00",
+      "qc": [
+        {
+          "check": "grayscale",
+          "value": "True",
+          "expected": "True",
+          "pass": true,
+          "at": "2026-09-05T00:16:01+00:00"
+        },
+        {
+          "check": "grayscale",
+          "value": "100.00%",
+          "expected": "≥99.5%",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-map.png",
+          "at": "2026-09-05T00:36:32+00:00"
+        },
+        {
+          "check": "grayscale",
+          "value": "100.00%",
+          "expected": "≥99.5%",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-map.png",
+          "at": "2026-09-05T00:38:28+00:00"
+        },
+        {
+          "check": "grayscale",
+          "value": "100.00%",
+          "expected": "≥99.5%",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-map.png",
+          "at": "2026-09-05T00:40:49+00:00"
+        },
+        {
+          "check": "grayscale",
+          "value": "100.00%",
+          "expected": "≥99.5%",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-map.png",
+          "at": "2026-09-05T00:55:47+00:00"
+        },
+        {
+          "check": "grayscale",
+          "value": "100.00%",
+          "expected": "≥99.5%",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-map.png",
+          "at": "2026-09-05T01:03:21+00:00"
+        },
+        {
+          "check": "grayscale",
+          "value": "100.00%",
+          "expected": "≥99.5%",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-map.png",
+          "at": "2026-09-05T01:06:09+00:00"
+        },
+        {
+          "check": "grayscale",
+          "value": "100.00%",
+          "expected": "≥99.5%",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-map.png",
+          "at": "2026-09-05T02:42:18+00:00"
+        },
+        {
+          "check": "grayscale",
+          "value": "100.00%",
+          "expected": "≥99.5%",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-map.png",
+          "at": "2026-09-05T02:44:52+00:00"
+        }
+      ]
+    },
+    "depth-board": {
+      "status": "rendered",
+      "prompt": "prompts/05-depth-board.txt",
+      "rendered_at": "2026-09-05T00:36:30+00:00",
+      "artifact": "renders/depth-board.png",
+      "adapter": "mock",
+      "qc": [
+        {
+          "check": "panels",
+          "value": "3x3=9",
+          "expected": "9",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-board.png",
+          "at": "2026-09-05T00:36:32+00:00"
+        },
+        {
+          "check": "panels",
+          "value": "3x3=9",
+          "expected": "9",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-board.png",
+          "at": "2026-09-05T00:38:28+00:00"
+        },
+        {
+          "check": "panels",
+          "value": "3x3=9",
+          "expected": "9",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-board.png",
+          "at": "2026-09-05T00:40:49+00:00"
+        },
+        {
+          "check": "panels",
+          "value": "3x3=9",
+          "expected": "9",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-board.png",
+          "at": "2026-09-05T00:55:47+00:00"
+        },
+        {
+          "check": "panels",
+          "value": "3x3=9",
+          "expected": "9",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-board.png",
+          "at": "2026-09-05T01:03:21+00:00"
+        },
+        {
+          "check": "panels",
+          "value": "3x3=9",
+          "expected": "9",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-board.png",
+          "at": "2026-09-05T01:06:09+00:00"
+        },
+        {
+          "check": "panels",
+          "value": "3x3=9",
+          "expected": "9",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-board.png",
+          "at": "2026-09-05T02:42:18+00:00"
+        },
+        {
+          "check": "panels",
+          "value": "3x3=9",
+          "expected": "9",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "depth-board.png",
+          "at": "2026-09-05T02:44:52+00:00"
+        }
+      ]
+    },
+    "clip": {
+      "status": "rendered",
+      "prompt": "prompts/06-clip.txt",
+      "rendered_at": "2026-09-05T00:16:50+00:00"
+    },
+    "storyboard-sheet": {
+      "status": "rendered",
+      "prompt": "prompts/05-storyboard-sheet.txt",
+      "rendered_at": "2026-09-05T02:42:50+00:00",
+      "artifact": "renders/storyboard-sheet.png",
+      "adapter": "mock",
+      "qc": [
+        {
+          "check": "panels",
+          "value": "5x3=15",
+          "expected": "15",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "storyboard-sheet.png",
+          "at": "2026-09-05T02:44:52+00:00"
+        }
+      ]
+    },
+    "clip-5x3": {
+      "status": "rendered",
+      "prompt": "prompts/06-clip-5x3.txt",
+      "rendered_at": "2026-09-05T00:40:47+00:00",
+      "artifact": "renders/clip-5x3.mp4",
+      "adapter": "mock",
+      "qc": [
+        {
+          "check": "runtime",
+          "value": "15.00s",
+          "expected": "~15s",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "clip-5x3.mp4",
+          "at": "2026-09-05T00:40:49+00:00"
+        },
+        {
+          "check": "runtime",
+          "value": "15.00s",
+          "expected": "~15s",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "clip-5x3.mp4",
+          "at": "2026-09-05T00:55:47+00:00"
+        },
+        {
+          "check": "runtime",
+          "value": "15.00s",
+          "expected": "~15s",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "clip-5x3.mp4",
+          "at": "2026-09-05T01:03:21+00:00"
+        },
+        {
+          "check": "runtime",
+          "value": "15.00s",
+          "expected": "~15s",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "clip-5x3.mp4",
+          "at": "2026-09-05T01:06:09+00:00"
+        },
+        {
+          "check": "runtime",
+          "value": "15.00s",
+          "expected": "~15s",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "clip-5x3.mp4",
+          "at": "2026-09-05T02:42:18+00:00"
+        },
+        {
+          "check": "runtime",
+          "value": "15.00s",
+          "expected": "~15s",
+          "pass": true,
+          "mode": "auto",
+          "artifact": "clip-5x3.mp4",
+          "at": "2026-09-05T02:44:52+00:00"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "stage": "clip-5x3",
+  "source": "template clip-engine-5x3 (\u001b[2msystem/templates/clip-engine-5x3.md\u001b[0m)",
+  "template_sha256": "7b6c57a1ffe759b025ca5962ffac3b0d8f8426f4601ba19a73e6f7c261bcf4e5",
+  "slots_used": [
+    "duration",
+    "subject",
+    "aspect_ratio"
+  ],
+  "style_register": "B",
+  "rendered_at": "2026-09-05T00:40:47+00:00"
+}

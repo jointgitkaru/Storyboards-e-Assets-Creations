@@ -1,0 +1,19 @@
+{
+  "stage": "storyboard-sheet",
+  "source": "template storyboard-sheet-5x3 (\u001b[2msystem/templates/storyboard-sheet-5x3.md\u001b[0m)",
+  "template_sha256": "61240c745c33d6beadc9bc0d68de35903dd94f5453375bc86262e32782864d80",
+  "slots_used": [
+    "subject",
+    "colour",
+    "subject_long",
+    "title_word",
+    "format_label",
+    "aspect_ratio",
+    "beat_1",
+    "beat_8",
+    "beat_15",
+    "@style_module"
+  ],
+  "style_register": "B",
+  "rendered_at": "2026-09-05T02:42:50+00:00"
+}

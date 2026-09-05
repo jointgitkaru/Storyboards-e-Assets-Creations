@@ -1,0 +1,15 @@
+{
+  "stage": "character-sheet",
+  "source": "protocolo character-sheet (\u001b[2mprotocols/character-reference-sheet/character-reference-sheet-prompt.md\u001b[0m)",
+  "template_sha256": "d09949e8df276fbf098e0abe6818458608f33d855317620aa75105643c1d802b",
+  "slots_used": [
+    "character_id",
+    "name",
+    "role",
+    "species",
+    "age_range",
+    "reference_source"
+  ],
+  "style_register": "B",
+  "rendered_at": "2026-09-05T02:44:25+00:00"
+}

@@ -1,0 +1,77 @@
+# CHARACTER REFERENCE SHEET — GENERATION PROMPT v2.0
+
+## HOW TO USE
+Attach one reference image of the character. Fill in the bracketed fields in METADATA and DESIGN NOTES before running. Everything else can be used as-is.
+
+## METADATA
+CHARACTER ID: CHAR-001
+NAME: Ana Marques
+ALIAS: [ ]
+ROLE: protagonist
+SPECIES: human
+AGE RANGE: 28–34
+REVISION: v1.0
+REFERENCE SOURCE: uploaded photo
+
+## IDENTITY LOCK (non-negotiable — never alter)
+Use strictly the same character identity as the uploaded reference image: same face, same age range, same hairstyle, same hair texture and color, same skin tone, same facial features, same body proportions, same outfit, same accessories, same color palette, same overall build. Do not redesign, reinterpret, or stylize the character. Do not change ethnicity, species, gender presentation, or body type.
+
+## LAYOUT
+Single horizontal production-style character reference sheet, multiple clearly labeled panels on a neutral light gray background, clean sans-serif labels, consistent margins, professional animation/game production board style.
+
+### 1. MAIN TURNAROUND + SCALE SHEET
+Full-body views, same lighting, same distance, same lens, same ground line across all four:
+- Front
+- 3/4 front
+- Side
+- Back
+
+Include a faint height-reference ruler or scale ticks beside the front view, and a small neutral gray silhouette guide underneath indicating stance. Identical proportions and outfit across all four views.
+
+### 2. HEAD TURNAROUND
+Close-up head-only views: front face, 3/4 face, side profile, back of head/hair detail. Facial structure, eyes, nose, mouth, jaw, ears, and hairline must match exactly across all four.
+
+### 3. EXPRESSION SHEET
+**Primary expressions** (6 small close-up portraits): neutral, slight smile, serious, surprised, thinking, calm/relaxed.
+
+**Micro-expressions** (4 additional close-ups, acting-direction style — pick 4 relevant to the character): e.g. "guarded / cautious", "subtle smirk", "brow furrowed / tension", "jaw tightened / controlled intensity".
+
+All expressions subtle and natural, without altering skull shape, eye size, or identity.
+
+### 4. POSTURE VARIATIONS
+3 small full-body poses showing the same character in: neutral baseline stance, relaxed/casual stance, alert/tense stance. Same outfit, same proportions, same identity — only weight distribution and body language change.
+
+### 5. HAND GESTURE LIBRARY *(omit if the character has no expressive hands, e.g. most animals)*
+4 close-up hand studies: relaxed/open, a characteristic habitual gesture, a tension/gripping gesture, an open/inviting gesture. Same skin tone, proportions, and any rings/gloves/accessories.
+
+### 6. CLOSE-UP DETAIL PANELS
+Macro shots of: eyes, mouth/lips, skin or fur texture (include freckles/marks if present), hair or fur texture, ear/earring or headwear detail, clothing fabric detail (seams, buttons, embroidery, weathering).
+
+### 7. SILHOUETTE + DEPTH REFERENCE
+A) **Silhouette**: two flat, solid-gray anatomical silhouettes (front and side) on a neutral background, no internal detail — pure outline and proportion reference.
+
+B) **Depth pass placeholder**: grayscale approximation only (white = nearest, black = farthest), no lighting, texture, or shading baked in.
+*Note: treat this panel as a stylized approximation. For a production-accurate depth map, run the final image through a dedicated depth-estimation pass (e.g. MiDaS / Depth Anything) afterward instead of relying on this panel alone — no generative image prompt can compute true geometric depth.*
+
+### 8. WARDROBE, ACCESSORIES & PROP CARD
+Flat/laid-out views of each clothing item and accessory. For any signature prop, include a small card with: Prop name, Type, Material, Distinguishing traits, Narrative purpose.
+
+### 9. COLOR PALETTE
+Extracted swatches with approximate hex values: skin/base tone, hair/fur color, eye color, primary clothing color(s), accessory color(s), accent color.
+
+### 10. VOICE & PERSONALITY NOTES *(optional — useful if this sheet will guide animation or voiceover direction)*
+Short label boxes only, no paragraphs: Personality (2–3 words), Speech tone/accent, Typical energy level.
+
+### 11. DESIGN NOTES
+Label boxes: Character type, Apparent age range, Hair, Eyes, Outfit, Accessories, Color palette, Character ID, Revision, Date.
+
+## CONTINUITY RULES (must follow exactly)
+- Use the exact same character identity in every panel.
+- Do not change proportions, scale, or outfit between panels.
+- Do not add, remove, or relocate any accessory or clothing item.
+- Lighting must be neutral studio lighting throughout — flat, low-shadow, consistent across all panels.
+- All views must share the same implied camera distance and focal length — no distortion, no dramatic perspective, no scene, no background elements.
+- Expressions and poses must never alter skull shape, eye spacing, or body proportions.
+
+## STYLE
+High-detail character reference sheet, clean studio lighting, sharp focus, realistic proportions, consistent anatomy, professional production art, organized grid layout, neutral background. No scene, no dramatic pose, no dramatic lighting anywhere on the sheet.

@@ -1,0 +1,5 @@
+Convert this image into a physically accurate grayscale linear depth map.
+White = nearest, black = farthest. Preserve geometry, silhouettes, and
+occlusion boundaries. Use smooth surface depth gradients and crisp object
+edges. Remove all color, texture, lighting, shading, outlines, normals,
+and ambient occlusion. Output only the clean depth map.

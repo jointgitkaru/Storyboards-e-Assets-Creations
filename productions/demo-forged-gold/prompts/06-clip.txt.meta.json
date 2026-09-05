@@ -1,0 +1,12 @@
+{
+  "stage": "clip",
+  "source": "template clip-depth (\u001b[2msystem/templates/clip-depth.md\u001b[0m)",
+  "template_sha256": "165b26913fb3a5558d88b5f242aebc0154c4b8e4f92729abb5ab82837c6e75fe",
+  "slots_used": [
+    "subject",
+    "duration",
+    "aspect_ratio"
+  ],
+  "style_register": "B",
+  "rendered_at": "2026-09-05T00:16:50+00:00"
+}

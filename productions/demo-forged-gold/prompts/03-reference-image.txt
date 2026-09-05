@@ -1,0 +1,36 @@
+REFERENCE IMAGE — FORGED — Gold
+
+Render one full-frame reference still that defines the look of this film.
+This image is the LOOK master: every later board and clip inherits its
+lighting, grade and material language from here.
+
+SUBJECT: FORGED flagship phone, gold colourway, polished titanium frame, brushed back glass
+
+SCENE / ENVIRONMENT: black studio, wet stone floor
+
+FRAMING: product hero, slightly low angle
+
+The still must contain exactly one coherent frame of the subject in its
+environment — no collage, no side-by-side panels, no text, no watermark,
+no logo.
+
+STYLE REGISTER: CINEMATIC PHOTO-REALISM (locked)
+Photorealistic live-action cinematic look. Real camera optics, real
+lighting physics, natural material and skin texture, true-to-life
+environment colours.
+Cinema-grade stills with a 24 fps temporal feel for animation.
+Lighting is physically motivated: visible light-source logic, realistic
+fall-off, correct shadow direction, no imaginary light.
+Fine surface detail, micro-contrast, subtle natural imperfections.
+NO illustration, NO anime, NO 3D render, NO cartoon, NO stylization,
+NO plastic or waxy skin, NO oversharpened halos, NO duplicated anatomy,
+NO fantasy lighting, NO neon overglow, NO HDR bloom abuse.
+
+REGISTER: PHOTOREALISTIC COMMERCIAL (locked)
+High-end product-film lighting: soft controlled key, clean speculars,
+accurate rendering of glossy and matte finishes, minimal spill.
+Neutral-to-warm palette, high clarity, rich honest contrast.
+Flawless but natural subject surfaces — never retouched plastic.
+Reads like a paid broadcast spot. 16:9 or 9:16 as stated in the sheet.
+
+High resolution, 16:9.

@@ -36,6 +36,17 @@ identidade.**
 
 ```
 ├── README.md                          ← este arquivo
+├── docs/
+│   └── BLUEPRINT.md                   arquitetura do sistema de produção (M0–M5)
+├── system/                            sistema: biblioteca + compilador + QC + adaptadores + Studio
+│   ├── engine.py                      CLI (verify·init·set·render·run·attach·status·qc*·ideas)
+│   ├── registry.json                  protocolos como dados + hashes + model_chains
+│   ├── qc.py / adapters.py / synth.py M3 (QC automático) · M4 (fallback) · fixtures
+│   ├── session.py                    Fase 3 — estados 0–4 do engine (CLI session + Studio)
+│   ├── studio.py / studio.html        M5 — painel web (API JSON + SPA vanilla)
+│   └── templates/                     templates da casa (reference · 5×3 · clips)
+├── productions/
+│   └── demo-forged-gold/              produção de demonstração (linha completa)
 ├── protocols/
 │   ├── storyboard-sheet-5x3/
 │   │   └── PROMPT STORYBOARD.md       engine completo: 5 estados, 7 lock blocks, 8 sheets
@@ -119,6 +130,26 @@ Uso: cole `BASE` + um registro inteiros em (a) a reference image e
 (grayscale por design) nem a sheets de produção (character/scale) —
 estas têm estilo próprio travado no próprio prompt.
 
+## Sistema — blueprint + compilador + QC + adaptadores
+
+Os protocolos agora têm uma camada executável (linha completa, modo híbrido):
+
+1. **[`docs/BLUEPRINT.md`](docs/BLUEPRINT.md)** — arquitetura do sistema de
+   produção: biblioteca de protocolos → compilador → orquestrador → QC →
+   adaptadores → studio (M0–M5), com modelo de dados e roadmap.
+2. **`system/`** — implementação (stdlib Python): `verify` checa fidelidade
+   sha256 dos lock blocks; `init`/`set`/`render` compilam prompts com gates e
+   provenance; **M3** `qc-image`/`qc-video`/`qc-register`/`qc-all` fazem QC
+   automático (conta painéis de verdade, grayscale, runtime do mp4,
+   consistência do registro entre etapas); **M4** `run`/`attach` renderizam
+   pela cadeia de adaptadores (API → mock → manual) com fallback anunciado;
+   `ideas` gera as 10 ideias do STATE 2 (seed reproduzível); **M5**
+   `studio.py` + `studio.html` são o **Studio** — painel web com produções,
+   trilha de etapas, galeria, prompts com histórico e diff, STATE 2 e QC,
+   tudo pela API relativa `/api/*`. Ver [`system/README.md`](system/README.md).
+3. **`productions/demo-forged-gold/`** — produção de demonstração com os dois
+   caminhos (depth board 3×3 e sheet 5×3), gates exercitados e `qc-all` verde.
+
 ## Ferramentas (estado atual)
 
 | Função | Ferramenta |
@@ -128,6 +159,35 @@ estas têm estilo próprio travado no próprio prompt.
 | Animação | Seedance 2.0 |
 
 ## Changelog
+
+- **2026-09-05 (4)** — **Fase 3: engine agêntico 5×3** — máquina de estados
+  0–4 do engine v3 em `system/session.py`, dirigível por CLI
+  (`engine.py session [--mock]`) e pelo Studio (console **ENGINE · SESSION**
+  com endpoints `/api/session*`). States com gates exatos do spec, prompt
+  impresso integral, QC de painéis com regenerate automático, `NEW` sem
+  re-executar o environment check, e parada imediata se a biblioteca tiver
+  drift. Roadmap 0–4 completo.
+- **2026-09-05 (3)** — **Fase 4: Studio (M5)** entregue: `system/studio.py`
+  (servidor HTTP stdlib com JSON API que encapsula os comandos do engine,
+  estáticos de renders/assets com Range para vídeo) e `system/studio.html`
+  (SPA vanilla — produções, trilha de etapas com compilar/run/QC/attach,
+  galeria, prompts com provenance + histórico arquivado e diff unificado,
+  STATE 2 com "virar produção", verify e gates na UI). Refactor no engine:
+  `compute_verify()` e `generate_ideas()` expostos como dados para a API.
+- **2026-09-05 (2)** — Fases 1–2 do roadmap + STATE 2: **M3 QC automático**
+  (`system/qc.py` — contagem real de painéis por detecção de grid, grayscale
+  por desvio de canal, runtime lido dos boxes do mp4, consistência
+  BASE+registro entre etapas; `qc-all`); **M4 adaptadores** com fallback
+  chain anunciado (`system/adapters.py`: openai-compat experimental → mock →
+  manual com `.pending.md`; comandos `run`/`attach`); `ideas` (STATE 2, 10
+  ideias reproduzíveis por seed) e fixtures sintéticos (`system/synth.py`).
+- **2026-09-05** — Adicionada a camada de sistema: `docs/BLUEPRINT.md`
+  (arquitetura em 6 módulos, M0–M5, com roadmap) e MVP `system/` (registry
+  com hashes de fidelidade dos protocolos, compilador de prompts com gates e
+  estilo colado palavra por palavra, orquestrador de produções, QC de
+  painéis/runtime/grayscale). Produção de demonstração
+  `productions/demo-forged-gold/` cobrindo a linha completa e os dois
+  caminhos da etapa 4.
 
 - **2026-09-04 (2)** — Incorporado o **original do character reference
   sheet v2.0** (upload em `main_karu`), movido para

@@ -1,0 +1,8 @@
+{
+  "stage": "depth-board",
+  "source": "protocolo depth-board-3x3 (\u001b[2mprotocols/depth-board-3x3/storyboard-prompt.md\u001b[0m)",
+  "template_sha256": "99093e645e50f93e1c638937bd290f1c6196a0b635ad61bd12b258f7e1c8e9c6",
+  "slots_used": [],
+  "style_register": "B",
+  "rendered_at": "2026-09-05T00:36:30+00:00"
+}
